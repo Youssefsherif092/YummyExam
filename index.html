@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy Exam</title>
+</head>
+
+<body class="">
+    <div id="loading"></div>
+    <section class="py-5" id="home">
+        <div class="container">
+            <div class="row gy-3" id="row">
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="search">
+        <form action="">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center ">
+                    <div class="col-md-4">
+                        <input type="text" placeholder="Search by Name" class="form-control" id="byName">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" placeholder="Search by 1st letter" class="form-control" maxlength="1"
+                            id="byLetter">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="container my-4">
+            <div class="row gy-3" id="search-row">
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="categories">
+        <div class="container">
+            <div class="row gy-3" id="categoriesRow">
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="area">
+        <div class="container">
+            <div class="row gy-3" id="areaRow">
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="ingredients">
+        <div class="container">
+            <div class="row gy-3" id="ingredientsRow">
+
+            </div>
+        </div>
+    </section>
+    <section class="py-5 h-100" id="contact">
+        <form action="">
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center ">
+                <div class="row justify-content-center align-items-center w-75 my-2 mx-2">
+                    <div class="col-md-4">
+                        <input type="text" placeholder="Enter your Name" class="form-control" id="nameForm">
+                        <div class="alert alert-warning" role="alert" id="nameAlert">
+                            Please enter valid Name
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" placeholder="Enter your Email" class="form-control" id="emailForm">
+                        <div class="alert alert-warning" role="alert" id="mailAlert">
+                            Please enter valid E-mail
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center w-75 my-2 mx-2 ">
+                    <div class="col-md-4">
+                        <input type="tel" placeholder="Enter your Phone" class="form-control" id="phoneForm">
+                        <div class="alert alert-warning" role="alert" id="numberAlert">
+                            Please enter valid Phone Number
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="number" placeholder="Enter your Age" class="form-control" id="ageForm">
+                        <div class="alert alert-warning" role="alert" id="ageAlert">
+                            Please enter valid Age (1-99)
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center w-75 my-2 mx-2 ">
+                    <div class="col-md-4">
+                        <input type="password" placeholder="Enter your Password" class="form-control" id="passForm">
+                        <div class="alert alert-warning" role="alert" id="passAlert">
+                            Min 8 letter password, with at least a symbol, upper and lower case letters and a number.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="password" placeholder="Repassword" class="form-control" id="rePassForm">
+                        <div class="alert alert-warning" role="alert" id="rePassAlert">
+                            Passwords don't match
+                        </div>
+                    </div>
+                </div>
+                <button disabled class="btn btn-danger" id="btn-disabled">Submit</button>
+                <button class="btn btn-danger" id="btn-enabled">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section class="py-5" id="main">
+        <div class="container">
+            <div class="row gy-3" id="mainRow">
+                <div class="ingredients"></div>
+            </div>
+        </div>
+    </div>
+</section>
+    <aside>
+        <div class="main-section flex-column justify-content-between">
+            <ul class="list-unstyled mx-4 my-2">
+                <li class="my-3"><a href="#" class="text-decoration-none text-white list-item" id="homeItem">Home</a>
+                </li>
+                <li class="my-3"><a href="#" class="text-decoration-none text-white list-item"
+                        id="searchItem">Search</a></li>
+                <li class="my-3"><a href="#" class="text-decoration-none text-white list-item"
+                        id="categoriesItem">Categories</a></li>
+                <li class="my-3"><a href="#" class="text-decoration-none text-white list-item" id="areaItem">Area</a>
+                </li>
+                <li class="my-3"><a href="#" class="text-decoration-none text-white list-item"
+                        id="ingredientsItem">Ingredients</a></li>
+                <li class="my-3"><a href="#" class="text-decoration-none text-white list-item" id="contactItem">Contact
+                        Us</a></li>
+            </ul>
+        </div>
+        <div class="white-section flex-column align-items-center justify-content-between ">
+            <div class="img-contain">
+                <img src="imgs/logo.png" alt="" class="w-100">
+            </div>
+            <div class="icon-contain">
+                <div class="bar-contain">
+                    <i class="fa-solid fs-2 fa-bars" id="bars"></i>
+                </div>
+                <i class="fa-solid fs-2 fa-xmark" id="x-mark"></i>
+            </div>
+            <div class="social-contain">
+                <i class="fa-solid fs-4 fa-globe"></i>
+                <i class="fa-solid fs-4 fa-share-nodes"></i>
+            </div>
+        </div>
+    </aside>
+
+
+
+
+
+
+
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

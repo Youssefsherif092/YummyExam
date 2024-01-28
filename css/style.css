@@ -1,0 +1,92 @@
+body{
+    background: #000;
+}
+
+.col-md-3 img{
+    cursor: pointer;
+}
+
+.contain{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.overlay{
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background: #FFF;
+    opacity: 75%;
+    transition: all 1s;
+}
+
+.contain:hover .overlay{
+    top:0;
+}
+
+aside{
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0px;
+}
+
+aside .main-section{
+    display: none;
+    background-color: #000;
+    width: 250px;
+    height: 100%;
+}
+
+aside .white-section{
+    display: flex;
+    background-color: #FFF;
+    width: 75px;
+    height: 100%;
+}
+
+.icon-contain{
+    cursor: pointer;
+}
+
+.list-item{
+    display: none;
+}
+
+#search{
+    display: none;
+}
+
+#btn-enabled{
+    display: none;
+}
+
+#contact{
+    display: none;
+}
+
+#ageAlert,#mailAlert,#numberAlert,#passAlert,#rePassAlert,#nameAlert,#main{
+    display: none;
+}
+
+.alert{
+    width: fit-content !important;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000 url('../imgs/giphy.gif') no-repeat center center;
+    z-index: 9999;
+    }
+
+#x-mark{
+    display: none;
+}
